@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE robot SYSTEM "robot.dtd">
+<robot>
+<!-- ===================================================
+			enum CHASSIS_TYPE
+			{
+				UNKNOWN_CHASSIS = -1,
+				TANK_CHASSIS,
+				MECANUM_CHASSIS,
+				MAX_CHASSIS_TYPES
+			};
+
+ Wheel Base is front-back distance between wheel centers 
+Track is the distance between wheels on an "axle"       
+=======================================================  -->
+    <chassis type="0"
+    		 wheelDiameter="6.0"
+             wheelBase="25.0"  
+             track="18.0">
+             
+ 
+<!-- ==================================================
+
+		enum TALON_TYPE
+		{
+			UNKNOWN_TALON_TYPE = -1,
+			MECANUM_FRONT_LEFT,
+			MECANUM_FRONT_LEFT2,
+			MECANUM_FRONT_RIGHT,
+			MECANUM_FRONT_RIGHT2,
+			MECANUM_BACK_LEFT,
+			MECANUM_BACK_LEFT2,
+			MECANUM_BACK_RIGHT,
+			MECANUM_BACK_RIGHT2,
+			TANK_LEFT_MASTER,  8
+			TANK_LEFT_SLAVE1,  9
+			TANK_LEFT_SLAVE2,
+			TANK_RIGHT_MASTER, 11
+			TANK_RIGHT_SLAVE1, 12
+			TANK_RIGHT_SLAVE2,
+			CLIMBER_MASTER,
+			CLIMBER_SLAVE,
+			ELEVATOR_MASTER,
+			ELEVATOR_SLAVE,
+			MAX_TALON_TYPES
+		};
+==================================================  -->
+		<!-- right front -->
+        <motor usage="12"
+               canId="12" />
+		<!-- left front -->
+        <motor usage="9"
+               canId="14"
+               inverted="true" />
+		<!-- right back -->
+        <motor usage="11"
+               canId="0" />
+		<!-- left back -->
+        <motor usage="8"
+               canId="3"
+               inverted="true" />
+               
+    </chassis>  
+</robot>
+

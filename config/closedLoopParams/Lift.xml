@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE prototype SYSTEM "Lift.dtd">
+<Lift>
+	<!-- Elevator Motor -->
+	<motor usage="15"
+		   control="position" 
+		   proportional="10.0" />	
+
+</Lift>
+

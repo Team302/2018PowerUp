@@ -1,0 +1,12 @@
+<!ELEMENT Lift (motor) >
+
+<!ELEMENT motor EMPTY>
+<!ATTLIST motor 
+          usage             (  0 |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 ) "0"
+		  control 			(throttle | position | velocity | voltage | follower | magic_motion ) "velocity"
+		  target			CDATA #IMPLIED 
+		  proportional		CDATA "1.0"
+		  integral			CDATA "0.0"
+		  derivative		CDATA "0.0"
+		  feedForward		CDATA "0.0"				
+>

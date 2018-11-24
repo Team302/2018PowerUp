@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<!DOCTYPE robot SYSTEM "robot.dtd">
+<robot>
+   
+<!-- ====================================================
+	 NavX
+	 ==================================================== -->    
+	<navx orientation="0"
+	      porttype="0"
+	      portid="4" />    
+    
+<!-- ====================================================
+	 Pigeon
+	 ==================================================== -->    
+    <pigeon canId="30" />
+       
+<!-- ====================================================
+	 PCM
+	 ==================================================== -->    
+	<pcm canId="32">
+		<analogInput type="3"
+					 analogId="0"
+					 voltageMin="0.5"
+					 voltageMax="4.5"
+					 outputMin="0.0"
+					 outputMax="200" />
+    </pcm>
+<!-- ====================================================
+	 PDP
+	 ==================================================== -->    
+	<pdp canId="31" />
+    
+<!-- ====================================================
+	 Lidars
+	 ==================================================== -->    
+	<!-- Downward Lidar  -->    
+    <lidar usage="1"
+    	   inputpin="3"
+    	   triggerpin="4" />
+	<!-- Forward Lidar  -->    
+    <lidar usage="0"
+    	   inputpin="3"
+    	   triggerpin="4" />
+<!-- ====================================================
+	 camera
+	==================================================== -->
+	<camera type="0"
+			width="320"
+			height="180"
+			fps="15" />
+       
+<!-- ====================================================
+	 Chassis
+	 ====================================================  -->
+    <chassis type="0"
+    		 wheelDiameter="6.285"
+             wheelBase="25.0"  
+             track="18.0">
+             
+ 		<!-- right back 11-->
+        <motor usage="11"
+        	   canId="14"
+         	   feedbackDevice="0"
+         	   countsPerRev="128"
+		   	   brakeMode="true"
+        	   gearRatio="11.0/18.0" 
+        	   peakCurrentDuration="50"
+        	   continuousCurrentLimit="30"
+        	   peakCurrentLimit="40" 
+        	   currentLimiting="true"  />
+         <motor usage="8"
+               canId="1"
+               inverted="true"
+        	   feedbackDevice="0"
+          	   countsPerRev="128"
+		   	   brakeMode="true"
+        	   gearRatio="11.0/18.0" 
+        	   peakCurrentDuration="50"
+        	   continuousCurrentLimit="30"
+        	   peakCurrentLimit="40" 
+        	   currentLimiting="true"  />
+		<!-- right front 12-->
+        <motor usage="12"
+        	   canId="15"
+        	   feedbackDevice="0"
+         	   countsPerRev="128"
+		   	   brakeMode="true"
+        	   gearRatio="11.0/18.0"
+        	   slaveTo="14" 
+        	   peakCurrentDuration="50"
+        	   continuousCurrentLimit="30"
+        	   peakCurrentLimit="40" 
+        	   currentLimiting="true"  />
+		<!-- left front 9 -->
+        <motor usage="9"
+               canId="0"
+               inverted="true"
+         	   feedbackDevice="0"
+          	   countsPerRev="128"
+		   	   brakeMode="true"
+        	   gearRatio="11.0/18.0" 
+        	   slaveTo="1" 
+        	   peakCurrentDuration="50"
+        	   continuousCurrentLimit="30"
+        	   peakCurrentLimit="40" 
+        	   currentLimiting="true"  />
+
+               
+    </chassis>  
+ 
+<!-- ====================================================
+	 Mechanisms
+	 ==================================================== -->    
+    
+    <!-- Grabber -->
+    <mechanism type="4">
+        <motor usage="18"
+	    inverted="true"
+        	   canId="2" />
+    	<!-- clutch -->
+    	<solenoid usage="1"
+    		      pcmId="32"
+    		      channel="2"
+    		      reversed="false" />
+    </mechanism>    
+     
+    <!-- Lift -->
+    <mechanism type="1">
+        <motor usage="15"
+        	   canId="4"
+        	   feedbackDevice="0"
+         	   countsPerRev="256"
+			   brakeMode="true"
+        	   gearRatio="70.0" 
+        	   peakCurrentDuration="50"
+        	   continuousCurrentLimit="25"
+        	   peakCurrentLimit="30" 
+        	   currentLimiting="true"  />
+
+        <motor usage="16"
+        	   canId="9"
+        	   feedbackDevice="0"
+         	   countsPerRev="256"
+		       inverted="true"
+        	   gearRatio="10.0" 
+        	   brakeMode="true" 
+        	   slaveTo="4"
+         	   peakCurrentDuration="50"
+        	   continuousCurrentLimit="25"
+        	   peakCurrentLimit="30" 
+        	   currentLimiting="true"  />
+        	   
+		<!-- 4 Bar -->
+        <motor usage="19"
+        	   canId="6"
+        	   feedbackDevice="0"
+         	   countsPerRev="256"
+		   	   sensorInverted="false"
+		       inverted="true"
+        	   gearRatio="1.0" 
+        	   brakeMode="true" />
+        	   
+		<digitalInput usage="4"
+					  digitalId="7"
+		              reversed="true" />
+    </mechanism>    
+     
+    <!-- Climber -->
+    <mechanism type="2">
+    	<!-- winch -->
+        <motor usage="14"
+        	   canId="11"
+               inverted="false"
+        	   feedbackDevice="0"
+         	   countsPerRev="256"
+		   	   brakeMode="true"
+        	   gearRatio="70.0" />
+    </mechanism>    
+     
+    <!-- Side Hanger -->
+    <mechanism type="3">
+    	 <!-- side hanger motor -->
+         <motor usage="17"
+         		canId="10"
+		        brakeMode="true"
+        	    gearRatio="70.0"  />
+    </mechanism>
+</robot>

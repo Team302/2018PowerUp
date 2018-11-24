@@ -1,0 +1,74 @@
+<!ELEMENT controllers (function*) >
+
+<!--
+        enum FUNCTION_IDENTIFIER
+        {
+            TANK_DRIVE_LEFT_CONTROL,
+            TANK_DRIVE_RIGHT_CONTROL,
+            ARCADE_DRIVE_THROTTLE,
+            ARCADE_DRIVE_STEER,
+            ROBOT_X_MAGNITUDE,
+            ROBOT_Y_MAGNITUDE,
+            ROBOT_ROTATION_MAGNITUDE,
+            RETRACT_WINCH,
+            ROTATE_SIDE_CLIMB_BAR_CW,
+            ROTATE_SIDE_CLIMB_BAR_CCW,
+            EXTEND_CLIMB_LATCH,
+            RETRACT_CLIMB_LATCH,
+            GRAB_CUBE,
+            MANUAL_ELEVATOR_CONTROL,
+            RAISE_4BAR,
+        };
+
+        enum CONTROLLER
+        {
+            DRIVER,
+            CO_PILOT
+        }
+
+        enum AXIS_IDENTIFIER
+        {
+            UNDEFINED_AXIS = -1000,
+            XBOX_X_AXIS_LEFT_JOYSTICK = 0,
+            XBOX_Y_AXIS_LEFT_JOYSTICK,
+            XBOX_LEFT_TRIGGER,
+            XBOX_RIGHT_TRIGGER,
+            XBOX_X_AXIS_RIGHT_JOYSTICK,
+            XBOX_Y_AXIS_RIGHT_JOYSTICK,
+            MAX_XBOX_AXIS                   // used for looping
+        };
+
+        enum BUTTON_IDENTIFIER
+        {
+            UNDEFINED_BUTTON = -1000,
+            XBOX_A_BUTTON = 0,
+            XBOX_B_BUTTON,
+            XBOX_X_BUTTON,
+            XBOX_Y_BUTTON,
+            XBOX_LEFT_BUMPER,
+            XBOX_RIGHT_BUMPER,
+            XBOX_BACK_BUTTON,
+            XBOX_START_BUTTON,
+            XBOX_PRESS_LEFT_STICK,
+            XBOX_PRESS_RIGHT_STICK,
+            XBOX_LEFT_TRIGGER_PRESSED,
+            XBOX_RIGHT_TRIGGER_PRESSED,
+            MAX_XBOX_BUTTONS                    // used for looping
+        };
+
+
+-->
+
+<!ATTLIST function
+          functionid        (  0 |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
+                              10 | 11 | 12 | 13 | 14 ) "0"
+          type              ( button | axis ) "button"
+
+          controller        ( 0 | 1 ) "0"
+          controllertype    CDATA #FIXED "xbox"
+          axis              ( -1000 |  0 |  1 |  2 |  3 |  4 |  5 ) "-1000"
+          button            ( -1000 |  0 |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
+                                      10 | 11 ) "-1000"
+>
+
+
