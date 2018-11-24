@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drive distance -->
+	<primitive id="1"
+			liftheight="0"
+			time="2" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+	<primitive id="9"
+			liftheight="0"
+			cubespeed="1"
+			drivespeed="120"/>
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="1"
+			time="0.5" />
+	<!-- Hold -->
+	<primitive id="1"
+			cubespeed="-1"
+			time="1" />
+</auton>

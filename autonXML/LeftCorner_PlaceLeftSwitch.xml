@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drive distance -->
+	<!-- TODO need to adjust for robot length -->
+	<primitive id="2"
+			   distance="148.0"
+			   drivespeed="60.0" />
+	<!-- hold position -->
+	<primitive id="1"
+			   time="0.25" />
+	<!-- turn angle  -->
+	<primitive id="6"
+			   heading="90.0" />
+	<!-- TODO:  Do we need to back to wall for alignment & distance -->
+	<!-- hold position + raise cube-->
+	<primitive id="1"
+			   time="0.25"
+			   liftheight="1" />
+	<!-- drive distance -->
+	<!-- TODO need to adjust for robot width -->
+	<primitive id="2"
+			   distance="10"
+			   heading="0.0"
+			   drivespeed="30.0" />
+	<!-- hold position + release cube-->
+	<primitive id="1"
+			   time="0.5"
+			   opengrabber="true" />
+</auton>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- Hold Position and Lift Elevator -->
+	<primative id="1"
+				time="0.25"
+				liftheight="1"/>
+	<!-- Drive Distance -->
+	<!-- TODO Need to Verify Heading and Distance -->
+	<primative id="2"
+				distance="100.0"
+				heading="50.0"
+				drivespeed="60.0" />
+	<!-- Hold Position and Release Cube -->
+	<primative id="1"
+				time="0.25"
+				opengrabber="true"/>
+</auton>

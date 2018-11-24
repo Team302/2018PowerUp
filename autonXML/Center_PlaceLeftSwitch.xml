@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+<!-- hold position + raise cube-->
+	<!-- Arc left -->
+	<primitive id="2"
+			liftheight="1"
+			   heading="-70"
+			   distance="35"
+			   drivespeed="90.0"
+			   enddrivespeed="80.0" />
+	<!-- Arc right -->
+	<primitive id="2"
+			liftheight="1"
+			   heading="70"
+			   distance="80"
+			   drivespeed="80.0"
+			   enddrivespeed="50.0" />
+	<!-- Drive To Wall-->
+	<primitive id="7"
+			liftheight="1"
+			   heading="0.0"
+			   drivespeed="40.0" />
+	<!-- Hold Position and Release Cube -->
+	<primitive id="1"
+				liftheight="1"
+				cubespeed="-1.0"
+				time="0.25"/>
+	<!-- drive backwards -->
+	<primitive id="2"
+			liftheight="0"
+			   cubespeed="-1.0"
+			   heading="0.0"
+			   distance="-30"
+			   drivespeed="-50" />
+	<!-- Turn Right and Lower fourbar -->
+	<primitive id="6"
+			cubespeed="0"
+			liftheight="0"
+			heading="50"/>
+	<!-- Drive To Cube -->
+	<primitive  id="9"
+				heading="0.0"
+				liftheight="0"
+				cubespeed="1.0"
+				drivespeed="45.0"/>
+	<!-- Drive backwards -->
+	<primitive id="2"
+			liftheight="1"
+			   cubespeed="0"
+			   heading="0.0"
+			   distance="-30"
+			   drivespeed="-30" />
+	<!-- Turn Left -->
+	<primitive id="6"
+			cubespeed="0"
+			liftheight="1"
+			heading="-50"/>
+	<!-- Drive To Wall-->
+	<primitive id="7"
+			liftheight="1"
+			   heading="0.0"
+			   drivespeed="40.0" />
+	<!-- Hold Position and Release Cube -->
+	<primitive id="1"
+			liftheight="1"
+				cubespeed="-1.0"
+				time="0.25"/>
+	<!-- drive backwards -->
+	<primitive id="2"
+			liftheight="1"
+			   cubespeed="-1.0"
+			   heading="0.0"
+			   distance="-30"
+			   drivespeed="-18" />
+	<!-- Hold Position and Stop cube speed -->
+	<primitive id="1"
+				cubespeed="0"
+				time="0.25"/>
+</auton>

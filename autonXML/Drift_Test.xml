@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drift -->
+	<primitive id="8"
+			distance="48"
+			drivespeed="30"
+			heading="90" />
+	<primitive id="8"
+			distance="48"
+			drivespeed="30"
+			heading="-90" />
+</auton>

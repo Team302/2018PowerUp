@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- Hold Position and Release Cube -->
+	<primitive id="0"
+				liftheight="0"
+				time="4"/>
+	<primitive id="0"
+				liftheight="1"
+				time="4"/>
+	<primitive id="0"
+				liftheight="0"
+				time="4"/>
+	<primitive id="0"
+				liftheight="1"
+				time="4"/>
+	<primitive id="0"
+				liftheight="0"
+				time="2"/>
+	<primitive id="0"
+				liftheight="1"
+				time="2"/>
+
+</auton>

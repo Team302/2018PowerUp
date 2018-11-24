@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- Drive Distance -->
+	<!-- TODO Need to Verify Heading and Distance -->
+	<primitive  id="2"
+				distance="100.0"
+				heading="50.0"
+				drivespeed="60.0" />
+	<!-- Turn Angle -->
+	<primitive  id="6"
+				heading="0.0" />
+	<!-- Drive Distance -->
+	<!-- TODO Need To Verify Distance -->
+	<primitive  id="2"
+				distance="210.0"
+				heading="0.0"
+				drivespeed="60.0" />
+	<!-- Turn Angle -->
+	<primitive  id="6"
+				heading="-90.0"/>
+	<!-- Hold Position and Lift Elevator -->
+	<primitive  id="1"
+				time="0.25"
+				liftheight="2"/>
+	<!-- Drive Distance -->
+	<!-- TODO Need To Verify Distance and Heading -->
+	<primitive  id="2"
+				distance="30.0"
+				heading="-90.0"
+				drivespeed="60.0"/>
+	<!-- Hold Position and Release Cube -->
+	<primitive  id="1"
+				time="0.25"
+				opengrabber="true"/>
+</auton>

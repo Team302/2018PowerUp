@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- Drive to blue dot -->
+	<primitive id="2"
+		       liftheight="1"
+			   heading="0.0"
+			   distance="116.0"
+			   drivespeed="120.0"
+			   enddrivespeed="50"/>
+	<primitive id="2"
+			liftheight="2"
+			heading="0.0"
+			distance="100.0"
+			drivespeed="50.0"
+			enddrivespeed="40"/>
+	<!-- Arc right -->
+	<primitive id="2"
+			   liftheight="2"
+			   distance="50.0"
+			   heading="30.0"
+			   drivespeed="40.0"/>
+	<!-- Hold position and release cube -->
+	<primitive id="0"
+				time="0.5"
+				cubespeed="0" />
+	<primitive id="0"
+				time="0.5"
+				cubespeed="-1" />
+	<primitive id="2"
+			   distance="-28"
+			   cubespeed="0.0"
+			   heading="0.0"
+			   drivespeed="-40" />
+	<!-- Turn to face cube and lower elevator -->
+	<primitive  id="6"
+				liftheight="0"
+				opengrabber="false"
+				heading="100"
+						/>
+	<!-- Drive To Wall -->
+	<primitive  id="7"
+				liftheight="0"
+				cubespeed="1.0"
+				drivespeed="30.0"/>
+	<!-- Drive Distance -->
+	<primitive  id="2"
+				heading="0.0"
+				distance="20.0"
+				cubespeed="0"
+				liftheight="1"
+				drivespeed="-30.0"/>
+	<!-- Turn Angle -->
+	<primitive  id="6"
+				liftheight="1"
+				heading="-130"/>
+	<!-- Do nothing and raise elevator -->
+	<primitive id="0"
+				liftheight="2"/>
+	<!-- Drive Distance -->
+	<primitive  id="2"	
+				heading="20.0"
+				liftheight="2"
+				distance="40.0"
+				cubespeed="1.0"
+				drivespeed="30.0"/>
+	<primitive  id="0"
+				time="0.5"
+				cubespeed="-1.0" />
+	<primitive  id="2"
+				heading="0.0"
+				distance="-20.0"
+				cubespeed="1.0"
+				drivespeed="-30.0"/>
+</auton>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drive distance -->
+	<!-- TODO need to adjust for robot length -->
+	<primitive id="2"
+			   distance="226.0"
+			   drivespeed="150.0" />
+	<!-- turn angle  -->
+	<primitive id="6"
+			liftheight="2"
+			   heading="-30.0" />
+	<!-- Drive Distance -->
+	<primitive id="2"
+				distance="60.0"
+				drivespeed="30.0"/>
+	<!-- TODO: Verify distance and heading -->
+	<!-- Hold position and release cube -->
+	<primitive id="1"
+				time="0.15"
+				opengrabber="true"/>
+	<primitive id="2"
+			   distance="-60"
+			   drivespeed="-30" />
+	<primitive id="1"
+			   time="1"
+			   liftheight="0" 
+			   opengrabber="false" />
+	<!-- Turn Angle -->
+	<primitive id="6"
+				heading="-120"
+						/>
+	<!-- Hold -->
+	<primitive id="1"
+			time="0.1"
+			opengrabber="true"
+				/>
+</auton>

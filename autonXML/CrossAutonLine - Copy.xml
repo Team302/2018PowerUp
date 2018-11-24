@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drive distance -->
+	<!-- TODO need to adjust for robot length -->
+	<primitive id="2"
+			   distance="120.0"
+			   heading="0.0"
+			   drivespeed="60.0" \>
+	<!-- hold position -->
+	<primitive id="1"
+			   time="15.0" \>
+</auton>

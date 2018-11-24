@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- Drive to blue dot -->
+	<primitive id="2"
+		       liftheight="1"
+			   heading="0.0"
+			   distance="94.0"
+			   drivespeed="150.0"
+			   enddrivespeed="140"/>
+	<primitive id="2"
+			liftheight="2"
+			heading="0.0"
+			distance="104.0"
+			drivespeed="140.0"
+			enddrivespeed="50"/>
+	<!-- Arc left -->
+	<primitive id="2"
+			   liftheight="2"
+			   distance="42.0"
+			   heading="-40.0"
+			   drivespeed="50.0"/>
+	<!-- Hold position and release cube -->
+	<primitive id="0"
+				liftheight="2"
+				time="0.25"
+				cubespeed="-1.0" />
+	<!-- Turn Right -->
+	<primitive id="6"
+			heading="45"/>
+	<primitive id="2"
+				liftheight="2"
+				distance="-10"
+				drivespeed="-100"
+				enddrivespeed="-100"
+				cubespeed="-1.0" />
+	<primitive id="2"
+			distance="-90"
+			liftheight="1"
+			heading="0"
+			cubespeed="0"
+			drivespeed="-100"/>
+	<primitive id="0"
+			time="999" />
+</auton>

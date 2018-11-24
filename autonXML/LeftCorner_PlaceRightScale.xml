@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drive distance -->
+	<primitive id="2"
+			heading="0.0"
+			liftheight="1"
+			   distance="118.0"
+			   drivespeed="160.0"
+			enddrivespeed="120"/>
+	<!-- arc right -->
+	<primitive id="2"
+			heading="90.0"
+			liftheight="1"
+			   distance="100.0"
+			   drivespeed="120.0"
+			 enddrivespeed="120"/>
+	<!-- Drive distance 1 -->
+	<primitive id="2"
+			heading="0"
+			liftheight="1"
+			   distance="80.0"
+			   drivespeed="150.0"
+			 enddrivespeed="60"/>
+	<!-- Drive distance 2 -->
+	<primitive id ="2"
+			heading="0.0"
+			liftheight="2"
+				distance="70.0"
+				drivespeed="100.0"
+				enddrivespeed="55"/>
+	<!-- Mega arc left -->
+	<primitive id ="2"
+			heading="-115"
+			liftheight="2"
+				distance="55.0"
+				drivespeed="80.0"/>
+	<!-- Hold position and release cube -->
+	<primitive id="0"
+				heading="0"
+				liftheight="2"
+				time="0.2"
+				cubespeed="-1"/>
+	<primitive id="2"
+				cubespeed="-0.3"
+				heading="0"
+				liftheight="2"
+			   distance="-20"
+			   drivespeed="-60" />
+	<!-- Turn left -->
+	<primitive id="6"
+				liftheight="0"
+				heading="-123"
+						/>
+	<primitive id="9"
+				cubespeed="1"
+				heading="0"
+				drivespeed="40"/>
+	<primitive id="0"
+				time="0.25"
+				cubespeed="1" />
+	<!-- Drive Distance -->
+	<primitive  id="2"
+				heading="0.0"
+				distance="20.0"
+				cubespeed="0"
+				liftheight="1"
+				drivespeed="-30.0"/>
+	<!-- Turn right -->
+	<primitive  id="6"
+				liftheight="2"
+				heading="138"/>
+	<!-- Do nothing and raise elevator -->
+	<primitive id="0"
+				time="0.1"
+				liftheight="2"/>
+	<!-- Drive Distance with slight arc left -->
+	<primitive  id="2"	
+				heading="-3.0"
+				liftheight="2"
+				distance="20.0"
+				cubespeed="0"
+				drivespeed="45.0"/>
+	<!-- shoot -->
+	<primitive  id="0"
+				time="0.5"
+				cubespeed="-0.5" />
+	<!-- backup -->
+	<primitive  id="2"
+				heading="0.0"
+				distance="-30.0"
+				cubespeed="-0.5"
+				drivespeed="-30.0"/>
+</auton>

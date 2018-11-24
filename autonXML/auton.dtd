@@ -1,0 +1,53 @@
+<!ELEMENT auton (primitive*) >
+
+<!-- primitive IDs
+
+       enum PRIMITIVE_IDENTIFIER
+         {
+             UNKNOWN_PRIMITIVE = -1,
+             DO_NOTHING,
+             HOLD_POSITION,
+             DRIVE_DISTANCE,
+             DRIVE_TIME,
+             DRIVE_TO_CUBE,
+             TURN_ANGLE_ABS,
+             TURN_ANGLE_REL,
+			 DRIVE_TO_WALL,
+			 TURN_TO_CUBE,
+			 DRIVE_LIDAR_DISTANCE,
+             MAX_AUTON_PRIMITIVES
+         };
+			
+		time in seconds
+		distance in inches
+		heading in degrees	
+		drivespeed in inches per second
+			
+
+		enum LIFT_PRESET_HEIGHTS
+		{
+			KEEP_SAME = -1,
+			FLOOR,
+			SWITCH,
+			SCALE
+		};
+
+-->
+
+<!ELEMENT primitive EMPTY >
+<!ATTLIST primitive 
+          id                ( 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ) "0"
+		  time				CDATA #IMPLIED
+          distance		    CDATA "0.0"
+          heading           CDATA "0.0"
+          drivespeed        CDATA "0.0"
+          enddrivespeed     CDATA "0.0"
+          xloc				CDATA "0.0"
+          yloc				CDATA "0.0"
+          liftheight        CDATA "-1"
+          opengrabber       ( true | false ) "false"
+		  cubespeed			CDATA "0.0"
+>
+
+
+

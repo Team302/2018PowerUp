@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<!-- drive distance -->
+	<primitive id="2"
+			heading="0.0"
+			liftheight="1"
+			   distance="170.0"
+			   drivespeed="150.0"
+			enddrivespeed="30"/>
+	<primitive id="2"
+			heading="-90.0"
+			liftheight="1"
+			   distance="50.0"
+			   drivespeed="150.0"
+			 enddrivespeed="20"/>
+	<!-- Drive distance 1 -->
+	<primitive id="2"
+			heading="0"
+			liftheight="1"
+			   distance="100.0"
+			   drivespeed="150.0"
+			 enddrivespeed="40"/>
+</auton>

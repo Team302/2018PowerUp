@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE auton SYSTEM "auton.dtd">
+<auton>
+	<primitive id="2"
+			   distance="68.0"
+			   heading="0.0"
+			   cubespeed="1.0"
+			   liftheight="1" 
+			   drivespeed="7.0"/>
+</auton>
